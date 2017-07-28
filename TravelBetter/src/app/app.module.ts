@@ -8,6 +8,10 @@ import { NeighborPage } from '../pages/neighbor/neighbor';
 import { HomePage } from '../pages/home/home';
 import { MePage } from '../pages/me/me';
 import { TabsPage } from '../pages/tabs/tabs';
+import { SelectfoodPage } from '../pages/select/selectfood';
+import { SelectspotPage } from '../pages/select/selectspot';
+import { SelectbedroomPage } from '../pages/select/selectbedroom';
+import { SelectfunPage } from '../pages/select/selectfun';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -19,7 +23,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     NeighborPage,
     MePage,
     HomePage,
-    TabsPage
+    TabsPage,
+    SelectfoodPage,
+    SelectspotPage,
+    SelectbedroomPage,
+    SelectfunPage
+
   ],
   imports: [
     BrowserModule,
@@ -32,7 +41,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MePage,
     NeighborPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    SelectfoodPage,
+    SelectspotPage,
+    SelectbedroomPage,
+    SelectfunPage
   ],
   providers: [
     StatusBar,

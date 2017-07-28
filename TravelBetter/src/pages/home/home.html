@@ -1,17 +1,45 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+<ion-header style="background-color:red">
+   <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+         {{ item }}
+      </ion-item>
+    </ion-list>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
-</ion-content>
+<ion-content class="card-background-page">
+  <ion-card>
+    <img src="../../assets/best food.png"/>
+    <div class="card-title"  (click)="Selectfood(all)">美食</div>
+    <div class="card-lefttitle" (click)="Selectfood(zizhu)">自助</div>
+    <div class="card-center-lefttitle" (click)="Selectfood(huoguo)">火锅</div>
+    <div class="card-center-righttitle" (click)="Selectfood(riliao)">日料</div>
+    <div class="card-righttitle"(click)="Selectfood(xican)">西餐</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="../../assets/best spot.png"/>
+    <div class="card-title"  (click)="Selectspot(all)">美景</div>
+    <div class="card-pian-lefttitle" (click)="Selectspot(ziran)">自然</div>
+    <div class="card-pian-righttitle" (click)="Selectspot(rengong)">人工</div>
+    
+  </ion-card>
+  <ion-card>
+    <img src="../../assets/best bedroom.png"/>
+    <div class="card-title"  (click)="Selectbedroom(all)">住宿</div>
+    <div class="card-lefttitle" (click)="Selectbedroom(jingji)">经济</div>
+    <div class="card-center-lefttitle" (click)="Selectbedroom(minsu)">民宿</div>
+    <div class="card-center-righttitle" (click)="Selectbedroom(yanxuan)">严选</div>
+    <div class="card-righttitle"(click)="Selectbedroom(shushi)">舒适</div>
+  </ion-card>
+  <ion-card>
+    <img src="../../assets/best bar.jpg"/>
+    <div class="card-title"  (click)="Selectfun(all)">休闲娱乐</div>
+    <div class="card-lefttitle" (click)="Selectfun(ktv)">KTV</div>
+    <div class="card-centertitle" (click)="Selectfun(jiuba)">酒吧</div>
+    <div class="card-righttitle" (click)="Selectfun(wangba)">网吧网咖</div>
+    <div class="card-xia-lefttitle"(click)="Selectfun(dianwan)">电玩</div>
+    <div class="card-xia-centertitle"(click)="Selectfun(chaguan)">茶馆</div>
+    <div class="card-xia-righttitle"(click)="Selectfun(yingyuan)">影院</div>
+  </ion-card>
+  </ion-content>
