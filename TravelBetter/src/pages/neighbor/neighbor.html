@@ -25,49 +25,26 @@
   </div>
  
   <div [ngSwitch]="option">
-  <ion-segment *ngSwitchCase="'food'">
-    <ion-segment-button value="zizhu">
-          自助
-    </ion-segment-button>
-    <ion-segment-button value="huoguo">
-          火锅
-    </ion-segment-button>
-    <ion-segment-button value="riliao">
-          日料
-    </ion-segment-button>
-    <ion-segment-button value="xican">
-          西餐
-    </ion-segment-button>
-    <ion-segment-button value="tiandian">
-          甜点
-    </ion-segment-button>
-    <ion-segment-button value="chuancai">
-          川菜
-    </ion-segment-button>
-  </ion-segment>
-  </div>
-
-  <div [ngSwitch]="zizhu">
-  <ion-list>
-    <ion-item>
-      <ion-thumbnail item-start>
-        <img src="../../assets/zizhu1.png">
-      </ion-thumbnail>
-      <h2>内蒙古饭店 海鲜自助餐厅</h2>
-    </ion-item>
-    <ion-item>
-      <ion-thumbnail item-start>
-        <img src="../../assets/zizhu2.png">
-      </ion-thumbnail>
-      <h2>金韩都自助烧烤.火锅.简餐</h2>
-    </ion-item>
-    <ion-item>
-      <ion-thumbnail item-start>
-        <img src="../../assets/zizhu3.png">
-      </ion-thumbnail>
-      <h2>好久不见时光主题自助餐厅</h2>
-    </ion-item>
-  </ion-list>
+      <ion-segment *ngSwitchCase="'food'" [(ngModel)]="food">
+            <ion-segment-button value="zizhu">
+                  自助
+            </ion-segment-button>
+            <ion-segment-button value="huoguo">
+                  火锅
+            </ion-segment-button>
+            <ion-segment-button value="riliao">
+                  日料
+            </ion-segment-button>
+            <ion-segment-button value="xican">
+                  西餐
+            </ion-segment-button>
+            <ion-segment-button value="tiandian">
+                  甜点
+            </ion-segment-button>
+            <ion-segment-button value="chuancai">
+                  川菜
+            </ion-segment-button>
+      </ion-segment>
   </div>
 
   <div [ngSwitch]="option">
@@ -133,15 +110,27 @@
   </ion-segment>
   </div>
 
-  
-<<<<<<< HEAD
-=======
-  <ion-card> //
-    <div class="card-lefttitle" (click)="Selectfood(zizhu)">食</div>
-    <div class="card-center-lefttitle" (click)="Selectfood(huoguo)">住</div>
-    <div class="card-center-righttitle" (click)="Selectfood(riliao)">娱</div>
-    <div class="card-righttitle"(click)="Selectfood(xican)">景</div>
-  </ion-card>
- 
->>>>>>> origin/master
+<div [ngSwitch]="food">
+            <ion-list *ngSwitchCase="'zizhu'">
+            <ion-item>
+                  <ion-thumbnail item-start>
+                  <img src="../../assets/zizhu1.png">
+                  </ion-thumbnail>
+                  <h2>内蒙古饭店 海鲜自助餐厅</h2>
+            </ion-item>
+            <ion-item>
+                  <ion-thumbnail item-start>
+                  <img src="../../assets/zizhu2.png">
+                  </ion-thumbnail>
+                  <h2>金韩都自助烧烤.火锅.简餐</h2>
+            </ion-item>
+            <ion-item>
+                  <ion-thumbnail item-start>
+                  <img src="../../assets/zizhu3.png">
+                  </ion-thumbnail>
+                  <h2>好久不见时光主题自助餐厅</h2>
+            </ion-item>
+            </ion-list>
+      </div>
+      
 </ion-content>
