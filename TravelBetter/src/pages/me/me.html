@@ -1,11 +1,10 @@
-<ion-header style="background-color:red">
+<ion-header>
   <ion-navbar>
-    <ion-title>
-      我
-    </ion-title>
+    <ion-toolbar color="danger">
+      <ion-title>我</ion-title>
+    </ion-toolbar>
   </ion-navbar>
 </ion-header>
-
 
 
 <ion-content padding>
@@ -13,7 +12,7 @@
   <ion-list>
     <ion-item>
       <ion-thumbnail item-start>
-        <img src="../../assets/shama.jpg"/> 
+        <img src="../../assets/ali.jpg"/> 
       </ion-thumbnail>
       <h2>TandB</h2>
       <p>Welcome to Travel Better/p>
@@ -22,11 +21,41 @@
   </ion-list>
 
   <ion-list>
-    <button ion-item>登录</button>
-    <button ion-item>注册</button>
-    <button ion-item>账号设置</button>
-    <button ion-item>个人资料</button>
-    <button ion-item>帮助与反馈</button>
-    <button ion-item>推荐给好友</button>
+    <button ion-item color="danger">登录</button>
+    <button ion-item color="danger">注册</button>
+    <button ion-item color="danger">账号设置</button>
+    <button ion-item color="danger">个人资料</button>
+    <button ion-item color="danger">帮助与反馈</button>
+    <button ion-item color="danger">推荐给好友</button>
   </ion-list>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>账号</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>密码</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  </ion-list> 
+  <ion-list>
+    <button ion-button color="danger" block outline >确认登录</button>
+  </ion-list>
+
+   <ion-list>
+    <ion-item>
+      <ion-label floating>账号</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+     <ion-item>
+      <ion-label floating>密码</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <button ion-button color="danger" outline block>确认登录</button>
+  </ion-list>
+
 </ion-content>
