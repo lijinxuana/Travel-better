@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'page-denglu',
-  templateUrl: 'denglu.html'
+  selector: 'page-tuijian',
+  templateUrl: 'tuijian.html'
 })
 export class tuijianPage {
 
