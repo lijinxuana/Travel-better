@@ -21,41 +21,12 @@
   </ion-list>
 
   <ion-list>
-    <button ion-item color="danger">登录</button>
-    <button ion-item color="danger">注册</button>
-    <button ion-item color="danger">账号设置</button>
-    <button ion-item color="danger">个人资料</button>
-    <button ion-item color="danger">帮助与反馈</button>
-    <button ion-item color="danger">推荐给好友</button>
-  </ion-list>
-  <ion-list>
-
-    <ion-item>
-      <ion-label floating>账号</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label floating>密码</ion-label>
-      <ion-input type="password"></ion-input>
-    </ion-item>
-  </ion-list> 
-  <ion-list>
-    <button ion-button color="danger" block outline >确认登录</button>
-  </ion-list>
-
-   <ion-list>
-    <ion-item>
-      <ion-label floating>账号</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-     <ion-item>
-      <ion-label floating>密码</ion-label>
-      <ion-input type="password"></ion-input>
-    </ion-item>
-  </ion-list>
-  <ion-list>
-    <button ion-button color="danger" outline block>确认登录</button>
+    <button ion-item (click)="openPage1(dengluPage)">登录</button>
+    <button ion-item (click)="openPage5(zhucePage)">注册</button>
+    <button ion-item (click)="openPage4(zhanghaoshezhiPage)">账号设置</button>
+    <button ion-item (click)="openPage3(gerenziliaoPage)">个人资料</button>
+    <button ion-item (click)="openPage2(bangzhuPage)">帮助与反馈</button>
+    <button ion-item (click)="openPage6(tuijianPage)">推荐给好友</button>
   </ion-list>
 
 </ion-content>

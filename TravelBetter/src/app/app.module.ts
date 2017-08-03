@@ -12,6 +12,14 @@ import { SelectfoodPage } from '../pages/select/selectfood';
 import { SelectspotPage } from '../pages/select/selectspot';
 import { SelectbedroomPage } from '../pages/select/selectbedroom';
 import { SelectfunPage } from '../pages/select/selectfun';
+import { dengluPage } from '../pages/denglu/denglu';
+import { bangzhuPage } from '../pages/bangzhu/bangzhu';
+import { gerenziliaoPage } from '../pages/gerenziliao/gerenziliao';
+import { tuijianPage } from '../pages/tuijian/tuijian';
+import { zhanghaoshezhiPage } from '../pages/zhanghaoshezhi/zhanghaoshezhi';
+import { zhucePage } from '../pages/zhuce/zhuce';
+
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -27,7 +35,17 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SelectfoodPage,
     SelectspotPage,
     SelectbedroomPage,
-    SelectfunPage
+    SelectfunPage,
+    dengluPage,
+    bangzhuPage,
+    gerenziliaoPage,
+    tuijianPage,
+    zhanghaoshezhiPage,
+    zhucePage,
+
+
+
+
 
   ],
   imports: [
@@ -45,7 +63,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SelectfoodPage,
     SelectspotPage,
     SelectbedroomPage,
-    SelectfunPage
+    SelectfunPage,
+    dengluPage,
+    bangzhuPage,
+    gerenziliaoPage,
+    tuijianPage,
+    zhanghaoshezhiPage,
+    zhucePage,
+
+
   ],
   providers: [
     StatusBar,
