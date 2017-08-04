@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
 
 @Component({
   selector: 'page-zhuce',
@@ -7,8 +8,16 @@ import { NavController } from 'ionic-angular';
 })
 export class zhucePage {
 
-  constructor(public navCtrl: NavController) {
+ constructor(public alertCtrl: AlertController) {
+   }
 
+    showAlert() {
+    let alert = this.alertCtrl.create({
+      title: 'New Friend!',
+      subTitle: '您已注册成功',
+      buttons: ['确认']
+    });
+    alert.present();
   }
 
 }
