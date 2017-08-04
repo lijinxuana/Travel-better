@@ -26,7 +26,7 @@
   </div>
  
   <div [ngSwitch]="option">
-    <ion-segment *ngSwitchCase="'food'">
+    <ion-segment *ngSwitchCase="'food'" [(ngModel)]="food">
       <ion-segment-button value="zizhu">
             自助
       </ion-segment-button>
@@ -48,9 +48,72 @@
     </ion-segment>
   </div>
 
-  <div [ngSwitch]="zizhu">
+ 
+  <div [ngSwitch]="option">
+  <ion-segment *ngSwitchCase="'spot'" [(ngModel)]="spot">
+    <ion-segment-button value="ziran">
+          自然
+    </ion-segment-button>
+    <ion-segment-button value="youlechang">
+          游乐场
+    </ion-segment-button>
+    <ion-segment-button value="gongyuan">
+          公园
+    </ion-segment-button>
+    <ion-segment-button value="bowuguan">
+          博物馆
+    </ion-segment-button>
+  </ion-segment>
+  </div>
 
-   <ion-list>
+  <div [ngSwitch]="option">
+  <ion-segment *ngSwitchCase="'bedroom'" [(ngModel)]="bedroom">
+    <ion-segment-button value="jingji">
+          经济
+    </ion-segment-button>
+    <ion-segment-button value="minsu">
+          民宿
+    </ion-segment-button>
+    <ion-segment-button value="yanxuan">
+          严选
+    </ion-segment-button>
+    <ion-segment-button value="shushi">
+          舒适
+    </ion-segment-button>
+    <ion-segment-button value="gaoxing">
+          高星
+    </ion-segment-button>
+    <ion-segment-button value="qinglv">
+          青旅
+    </ion-segment-button>
+  </ion-segment>
+  </div>
+
+  <div [ngSwitch]="option">
+  <ion-segment *ngSwitchCase="'fun'" [(ngModel)]="fun">
+    <ion-segment-button value="ktv">
+          KTV
+    </ion-segment-button>
+    <ion-segment-button value="jiuba">
+          酒吧
+    </ion-segment-button>
+    <ion-segment-button value="wangba">
+          网吧
+    </ion-segment-button>
+    <ion-segment-button value="dianwan">
+          电玩
+    </ion-segment-button>
+    <ion-segment-button value="chaguan">
+          茶馆
+    </ion-segment-button>
+    <ion-segment-button value="yingyuan">
+          影院
+    </ion-segment-button>
+  </ion-segment>
+  </div>
+
+   <div [ngSwitch]="food">
+   <ion-list *ngSwitchCase="'zizhu'">
       <ion-item>
          <ion-thumbnail item-start>
             <img src="../../assets/zizhu1.png"/> 
@@ -75,8 +138,6 @@
                   </ion-row>
             </p>
       </ion-item>
-   </ion-list>
-  <ion-list>
       <ion-item>
          <ion-thumbnail item-start>
             <img src="../../assets/zizhu2.png"/> 
@@ -101,9 +162,6 @@
             </ion-row>
             </p>
       </ion-item>
-   </ion-list>
-
-     <ion-list>
       <ion-item>
          <ion-thumbnail item-start>
             <img src="../../assets/zizhu3.png"/> 
@@ -132,67 +190,5 @@
 
   </div>
 
-  <div [ngSwitch]="option">
-  <ion-segment *ngSwitchCase="'spot'">
-    <ion-segment-button value="ziran">
-          自然
-    </ion-segment-button>
-    <ion-segment-button value="youlechang">
-          游乐场
-    </ion-segment-button>
-    <ion-segment-button value="gongyuan">
-          公园
-    </ion-segment-button>
-    <ion-segment-button value="bowuguan">
-          博物馆
-    </ion-segment-button>
-  </ion-segment>
-  </div>
-
-  <div [ngSwitch]="option">
-  <ion-segment *ngSwitchCase="'bedroom'">
-    <ion-segment-button value="jingji">
-          经济
-    </ion-segment-button>
-    <ion-segment-button value="minsu">
-          民宿
-    </ion-segment-button>
-    <ion-segment-button value="yanxuan">
-          严选
-    </ion-segment-button>
-    <ion-segment-button value="shushi">
-          舒适
-    </ion-segment-button>
-    <ion-segment-button value="gaoxing">
-          高星
-    </ion-segment-button>
-    <ion-segment-button value="qinglv">
-          青旅
-    </ion-segment-button>
-  </ion-segment>
-  </div>
-
-  <div [ngSwitch]="option">
-  <ion-segment *ngSwitchCase="'fun'">
-    <ion-segment-button value="ktv">
-          KTV
-    </ion-segment-button>
-    <ion-segment-button value="jiuba">
-          酒吧
-    </ion-segment-button>
-    <ion-segment-button value="wangba">
-          网吧
-    </ion-segment-button>
-    <ion-segment-button value="dianwan">
-          电玩
-    </ion-segment-button>
-    <ion-segment-button value="chaguan">
-          茶馆
-    </ion-segment-button>
-    <ion-segment-button value="yingyuan">
-          影院
-    </ion-segment-button>
-  </ion-segment>
-  </div>
 
 </ion-content>
