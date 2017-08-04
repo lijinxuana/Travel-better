@@ -18,6 +18,7 @@ import { gerenziliaoPage } from '../pages/gerenziliao/gerenziliao';
 import { tuijianPage } from '../pages/tuijian/tuijian';
 import { zhanghaoshezhiPage } from '../pages/zhanghaoshezhi/zhanghaoshezhi';
 import { zhucePage } from '../pages/zhuce/zhuce';
+import { find1Page } from '../pages/find1/find1';
 
 
 
@@ -43,6 +44,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     tuijianPage,
     zhanghaoshezhiPage,
     zhucePage,
+    find1Page,
 
 
 
@@ -71,6 +73,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     tuijianPage,
     zhanghaoshezhiPage,
     zhucePage,
+    find1Page,
 
 
   ],
