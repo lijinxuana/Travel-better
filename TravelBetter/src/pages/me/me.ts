@@ -6,7 +6,7 @@ import { gerenziliaoPage } from '../gerenziliao/gerenziliao';
 import { zhanghaoshezhiPage } from '../zhanghaoshezhi/zhanghaoshezhi';
 import { zhucePage } from '../zhuce/zhuce';
 import { tuijianPage } from '../tuijian/tuijian';
-
+                       
 @Component({
   selector: 'page-me',
   templateUrl: 'me.html'

@@ -19,6 +19,11 @@ import { tuijianPage } from '../pages/tuijian/tuijian';
 import { zhanghaoshezhiPage } from '../pages/zhanghaoshezhi/zhanghaoshezhi';
 import { zhucePage } from '../pages/zhuce/zhuce';
 import { find1Page } from '../pages/find1/find1';
+import { find2Page } from '../pages/find2/find2';
+import { find3Page } from '../pages/find3/find3';
+import { find4Page } from '../pages/find4/find4';
+import { find5Page } from '../pages/find5/find5';
+
 
 
 
@@ -45,7 +50,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     zhanghaoshezhiPage,
     zhucePage,
     find1Page,
-
+    find2Page,
+    find3Page,
+    find4Page,
+    find5Page,
 
 
 
@@ -74,6 +82,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     zhanghaoshezhiPage,
     zhucePage,
     find1Page,
+    find2Page,
+    find3Page,
+    find4Page,
+    find5Page,
 
 
   ],
