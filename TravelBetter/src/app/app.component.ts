@@ -2,11 +2,14 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
+import { ZhuceService } from'../pages/service/zhuceservice';
+import { SebedService } from'../pages/service/sebedservice';
+import { DengluService } from'../pages/service/dengluservice';
 import { TabsPage } from '../pages/tabs/tabs';
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  providers:[ZhuceService,DengluService,SebedService]
 })
 export class MyApp {
   rootPage:any = TabsPage;
