@@ -7,21 +7,20 @@
 </ion-header>
 
 <ion-content>
-
- <ion-list>
-
-  <ion-item>
-    <ion-input type="text" placeholder="请输入您的邮箱"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-input type="password" placeholder="请输入您设置的密码"></ion-input>
-  </ion-item>
-
-</ion-list>
-
   <ion-list>
-    <button ion-button color="danger" block outline (click)="showAlert()" >确认注册</button>
+    <ion-item>
+      <ion-input type="text" placeholder="请输入你的邮箱(用户名)" [(ngModel)]="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="请输入你的密码" [(ngModel)]="mypass1"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="请再输入一次密码" [(ngModel)]="mypass2"></ion-input>
+    </ion-item>
+  </ion-list> 
+  <ion-list>
+    <button ion-button color="danger" block outline (click)="zhuce()">确认注册</button>
   </ion-list>
+
 
 </ion-content>

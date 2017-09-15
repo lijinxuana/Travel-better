@@ -2,6 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+import { HttpModule } from'@angular/http';
 
 import { FindPage } from '../pages/find/find';
 import { NeighborPage } from '../pages/neighbor/neighbor';
@@ -23,11 +24,6 @@ import { find2Page } from '../pages/find2/find2';
 import { find3Page } from '../pages/find3/find3';
 import { find4Page } from '../pages/find4/find4';
 import { find5Page } from '../pages/find5/find5';
-
-
-
-
-
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -61,6 +57,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
