@@ -6,6 +6,7 @@ import { HomePage } from '../home/home';
 import { MePage } from '../me/me';
 
 @Component({
+  selector:'page-tabs',
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
