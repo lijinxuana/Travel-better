@@ -22,16 +22,16 @@ export class HomePage {
         option:option
     })
   }
-    openPage1(){
+   Selectzizhu(){
     this.navCtrl.push(zizhuPage)
    }
-   openPage2(){
+   Selecthuoguo(){
     this.navCtrl.push(huoguoPage)
    }
-   openPage3(){
+   Selectriliao(){
     this.navCtrl.push(riliaoPage)
    }
-   openPage4(){
+   Selectxican(){
     this.navCtrl.push(xicanPage)
    }
 

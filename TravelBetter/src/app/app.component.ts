@@ -5,11 +5,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ZhuceService } from'../pages/service/zhuceservice';
 import { SebedService } from'../pages/service/sebedservice';
 import { DengluService } from'../pages/service/dengluservice';
+import { SefoodService } from'../pages/service/sefoodservice';
 import { TabsPage } from '../pages/tabs/tabs';
 
 @Component({
   templateUrl: 'app.html',
-  providers:[ZhuceService,DengluService,SebedService]
+  providers:[ZhuceService,DengluService,SebedService,SefoodService]
 })
 export class MyApp {
   rootPage:any = TabsPage;

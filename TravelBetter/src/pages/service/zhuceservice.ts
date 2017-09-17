@@ -15,11 +15,11 @@ export class ZhuceService {
   baseUrl:string;
   constructor(http: Http,public navCtrl:NavController,public params:NavParams){
     this.http=http;
-    this.baseUrl='http://tb.likole.cn/user_register'
+    this.baseUrl='http://123.206.22.15/user_register'
   }
  
   zhuce(username,mypass1){
-   return this.http.get(this.baseUrl+'&username='+username+'&password='+mypass1)
+   return this.http.get(this.baseUrl+'?username='+username+'&password='+mypass1)
    .map(res=>res.json());
       }
  }     

@@ -8,7 +8,7 @@ export class SebedService{
   baseUrl: String;
   constructor(http:Http){
     this.http = http;
-    this.baseUrl = 'http://tb.likole.cn/hotel_getDetail';
+    this.baseUrl = 'http://123.206.22.15_getDetail';
   }
 
   getPost(){

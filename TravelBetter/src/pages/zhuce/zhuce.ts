@@ -21,9 +21,6 @@ export class zhucePage {
     this.mypass2=params.get('mypass2');
   }
 
-ngOnInit(){
-  this.zhuce();
-}
   zhuce(){
     if(this.mypass1==this.mypass2){
       this.zhuceservice.zhuce(this.username,this.mypass1).subscribe(reponse => {
