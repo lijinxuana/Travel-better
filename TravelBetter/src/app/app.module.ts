@@ -24,6 +24,11 @@ import { find2Page } from '../pages/find2/find2';
 import { find3Page } from '../pages/find3/find3';
 import { find4Page } from '../pages/find4/find4';
 import { find5Page } from '../pages/find5/find5';
+import { zizhuPage } from '../pages/select1/zizhu/zizhu';
+import { huoguoPage } from '../pages/select1/huoguo/huoguo';
+import { xicanPage } from '../pages/select1/xican/xican';
+import { riliaoPage } from '../pages/select1/riliao/riliao';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -50,7 +55,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     find3Page,
     find4Page,
     find5Page,
-
+    zizhuPage,
+    huoguoPage,
+    xicanPage,
+    riliaoPage,
 
 
 
@@ -83,6 +91,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     find3Page,
     find4Page,
     find5Page,
+    zizhuPage,
+    huoguoPage,
+    xicanPage,
+    riliaoPage,
+
+
 
 
   ],

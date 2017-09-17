@@ -4,6 +4,10 @@ import { SelectfoodPage } from '../select/selectfood';
 import { SelectspotPage } from '../select/selectspot';
 import { SelectbedroomPage } from '../select/selectbedroom';
 import { SelectfunPage } from '../select/selectfun';
+import { huoguoPage } from '../select1/huoguo/huoguo';
+import { zizhuPage } from '../select1/zizhu/zizhu';
+import { xicanPage } from '../select1/xican/xican';
+import { riliaoPage } from '../select1/riliao/riliao';
 
 @Component({
   selector: 'page-home',
@@ -12,13 +16,25 @@ import { SelectfunPage } from '../select/selectfun';
 export class HomePage {
 
   constructor(public navCtrl: NavController) {
-
   }
   Selectfood(option){
     this.navCtrl.push(SelectfoodPage,{
         option:option
     })
   }
+    openPage1(){
+    this.navCtrl.push(zizhuPage)
+   }
+   openPage2(){
+    this.navCtrl.push(huoguoPage)
+   }
+   openPage3(){
+    this.navCtrl.push(riliaoPage)
+   }
+   openPage4(){
+    this.navCtrl.push(xicanPage)
+   }
+
   Selectspot(option){
     this.navCtrl.push(SelectspotPage,{
         option:option
