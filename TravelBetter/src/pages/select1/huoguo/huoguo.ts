@@ -9,8 +9,8 @@ import { SefoodService } from '../../service/sefoodservice';
 export class huoguoPage {
 datas:any;
 
-constructor(public navCtrl: NavController,public params: NavParams,private zizhuservice:SefoodService) {
-     this.zizhuservice.getPost().subscribe(reponse => {
+constructor(public navCtrl: NavController,public params: NavParams,private huoguoservice:SefoodService) {
+     this.huoguoservice.getPost2().subscribe(reponse => {
       this.datas=reponse.data;
   })
 }

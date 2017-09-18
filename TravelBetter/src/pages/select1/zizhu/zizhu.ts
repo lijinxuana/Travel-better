@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { SefoodService }
+import { NavController,NavParams } from 'ionic-angular';
+import { SefoodService } from '../../service/sefoodservice';
 @Component({
-  templateUrl: 'zizhu.html'
+  templateUrl: 'zizhu.html',
+  providers:[SefoodService]
 })
 export class zizhuPage {
 
-  constructor(public navCtrl: NavController) {
-
-  }
-
+datas:any;
+ constructor(public navCtrl: NavController,public params: NavParams,private zizhuservice:SefoodService) {
+     this.zizhuservice.getPost1().subscribe(reponse => {
+      this.datas=reponse.data;
+  })
+}
 }

@@ -23,16 +23,19 @@ export class HomePage {
     })
   }
    Selectzizhu(){
-    this.navCtrl.push(zizhuPage)
+    this.navCtrl.push(zizhuPage);
    }
+
    Selecthuoguo(){
-    this.navCtrl.push(huoguoPage)
+    this.navCtrl.push(huoguoPage);
    }
+
    Selectriliao(){
-    this.navCtrl.push(riliaoPage)
+    this.navCtrl.push(riliaoPage);
    }
+
    Selectxican(){
-    this.navCtrl.push(xicanPage)
+    this.navCtrl.push(xicanPage);
    }
 
   Selectspot(option){
