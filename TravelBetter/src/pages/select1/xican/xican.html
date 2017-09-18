@@ -5,6 +5,14 @@
     </ion-toolbar>
   </ion-navbar>
 </ion-header>
+
 <ion-content>
-<h2>5464164165</h2>
+<ion-list>
+  <ion-item *ngFor="let data of datas">
+    <h2>{{ data.name }}&nbsp;&nbsp;&nbsp;评分：{{ data.score }}</h2>
+    <p>有{{ data.a }}评价&nbsp;&nbsp;&nbsp;平均价格：{{ data.b }}</p>
+    <p> 地址：{{ data.address }}&nbsp;&nbsp;&nbsp;电话：{{ data.phone }}</p>
+    <button ion-button clear item-end>View</button>
+  </ion-item>
+</ion-list>
 </ion-content>
