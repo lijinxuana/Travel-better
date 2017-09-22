@@ -28,6 +28,11 @@ import { zizhuPage } from '../pages/select1/zizhu/zizhu';
 import { huoguoPage } from '../pages/select1/huoguo/huoguo';
 import { xicanPage } from '../pages/select1/xican/xican';
 import { riliaoPage } from '../pages/select1/riliao/riliao';
+import { ziranPage } from '../pages/select2/ziran/ziran';
+import { rengongPage } from '../pages/select2/rengong/rengong';
+
+
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -59,6 +64,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     huoguoPage,
     xicanPage,
     riliaoPage,
+    ziranPage,
+    rengongPage,
 
 
 
@@ -95,6 +102,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     huoguoPage,
     xicanPage,
     riliaoPage,
+    ziranPage,
+    rengongPage,
 
 
 
