@@ -36,18 +36,19 @@ export class HomePage {
    openPage4(){
     this.navCtrl.push(xicanPage)
    }
-   openPage5(){
-    this.navCtrl.push(ziranPage)
-   }
-   openPage6(){
-    this.navCtrl.push(rengongPage)
-   }
+
 
   Selectspot(option){
     this.navCtrl.push(SelectspotPage,{
         option:option
     })
   }
+     openPage5(){
+    this.navCtrl.push(ziranPage)
+   }
+   openPage6(){
+    this.navCtrl.push(rengongPage)
+   }
   Selectbedroom(option){
     this.navCtrl.push(SelectbedroomPage,{
         option:option
