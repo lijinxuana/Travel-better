@@ -10,6 +10,10 @@ import { xicanPage } from '../select1/xican/xican';
 import { riliaoPage } from '../select1/riliao/riliao';
 import { rengongPage } from '../select2/rengong/rengong';
 import { ziranPage } from '../select2/ziran/ziran';
+import { jingjiPage } from '../zhusu/jingji/jingji';
+import { mingsuPage } from '../zhusu/mingsu/mingsu';
+import { shushiPage } from '../zhusu/shushi/shushi';
+import { yanxuanPage } from '../zhusu/yanxuan/yanxuan';
 
 @Component({
   selector: 'page-home',
@@ -54,6 +58,18 @@ export class HomePage {
         option:option
     })
   }
+  openPage7(){
+    this.navCtrl.push(jingjiPage)
+   }
+   openPage8(){
+    this.navCtrl.push(mingsuPage)
+   }
+   openPage9(){
+    this.navCtrl.push(shushiPage)
+   }
+   openPage10(){
+    this.navCtrl.push(yanxuanPage)
+   }
   Selectfun(option){
     this.navCtrl.push(SelectfunPage,{
         option:option

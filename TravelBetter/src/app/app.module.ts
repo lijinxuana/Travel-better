@@ -30,7 +30,10 @@ import { xicanPage } from '../pages/select1/xican/xican';
 import { riliaoPage } from '../pages/select1/riliao/riliao';
 import { ziranPage } from '../pages/select2/ziran/ziran';
 import { rengongPage } from '../pages/select2/rengong/rengong';
-
+import { jingjiPage } from '../pages/zhusu/jingji/jingji';
+import { mingsuPage } from '../pages/zhusu/mingsu/mingsu';
+import { shushiPage } from '../pages/zhusu/shushi/shushi';
+import { yanxuanPage } from '../pages/zhusu/yanxuan/yanxuan';
 
 
 
@@ -66,6 +69,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     riliaoPage,
     ziranPage,
     rengongPage,
+    jingjiPage,
+    mingsuPage,
+    shushiPage,
+    yanxuanPage,
 
 
 
@@ -104,8 +111,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     riliaoPage,
     ziranPage,
     rengongPage,
-
-
+    jingjiPage,
+    mingsuPage,
+    shushiPage,
+    yanxuanPage,
 
 
   ],
